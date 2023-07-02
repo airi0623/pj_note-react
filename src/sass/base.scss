@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-size: 0.875rem;
+  font-family: inherit;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*-------------------------------------------*/
+/*  見出し
+/*-------------------------------------------*/
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+/*-------------------------------------------*/
+/*  フォーム
+/*-------------------------------------------*/
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+/*-------------------------------------------*/
+/*  フォントサイズ
+/*-------------------------------------------*/
+.font-xxs {
+  font-size: $font-xxs;
+}
+.font-xs {
+  font-size: $font-xs;
+}
+/*-------------------------------------------*/
+/*  ボタン
+/*-------------------------------------------*/
+button {
+  cursor: pointer;
+  font-size: 0.875em;
+  font-weight: 600;
+  font-weight: bold;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 通常ボタン 追加ボタン */
+.btn-normal  {
+  padding: 0.5em 0.8em;
+  border-radius: 8px;
+  color:$White;
+  border: 1px solid $Blue;
+  background-color: $Blue;
+  &:hover {
+    // 影ver
+    margin: 0px 2px 5px 0px;
+    box-shadow: 2px 5px 0px 0px rgba(0, 0, .5, .5);
+    // 色ver
+    // color:$Blue;
+    // border: 1px solid $Blue;
+    // background-color: $White;
+  }
+  &:disabled {
+    color:$White;
+    border: 1px solid $BlueDisable;
+    background-color: $BlueDisable;
+  }
+  &:active {
+    // 影ver
+    margin: 0px;
+    box-shadow:none;
+    // 色ver
+    // color:$Blue;
+    // border: 1px solid $Blue;
+    // background-color: $White;
+  }
+}
+/* 削除ボタン */
+.btn-delete {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: $Red;
+  border: 1px solid $Red;
+  color: $White;
+  &:hover {
+    border-radius: 50%;
+    background-color: $White;
+    border: 1px solid $Red;
+    color:$Red;
+  }
+}
+
+
+/*-------------------------------------------*/
+/* button {
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+button:hover {
+  transition: 0.3s;
+}
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 0.875em;
+  font-weight: bold;
+  font-family: inherit;
+  color:$White;
+  background-color: $Blue;
+  cursor: pointer;
+  transition:  0.3s;
+}
+button:hover {
+  color:$White;
+  background-color: #626365;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} */
+
+/* @media (prefers-color-scheme: light) {
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+
+/* 楕円ボタン */
+// .btn-radius {
+//   border-radius: 20px;
+//   :hover {
+//     border-radius: 20px;
+//   }
+// }
+// /* 角丸四角ボタン */
+// .btn-radius {
+//   border-radius: 5px;
+//   :hover {
+//     border-radius: 5px;
+//   }
+// }
+// /* 円ボタン */
+// .btn-circle {
+//   border-radius: 50%;
+//   width: 30px;
+//   height: 30px;
+//   :hover {
+//     border-radius: 50%;
+//   }
+// }

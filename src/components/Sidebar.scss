@@ -1,0 +1,30 @@
+.comp-sidebar {
+  // width: 30vw;
+  height: 100%;
+  overflow: scroll;
+  border-right: solid 2px $Gray;
+
+  .body {
+    cursor: pointer;
+    font-size: 0.875rem;
+    border-bottom: solid 1px $Gray;
+    background-color: $White;
+    .note {
+      border-top: solid 1px $Gray;
+      transition: 0.3s;
+      .mod-date {
+        font-size: 0.5rem;
+        color: $GrayDark;
+      }
+      &:hover {
+        background-color: $GrayLight;
+      }
+      &:active {
+        background-color: $GrayLight;
+      }
+    }
+  }
+}
+.svg-inline--fa .fa-trash-can{
+  margin: 0 !important;
+}

@@ -1,0 +1,76 @@
+/*-------------------------------------------*/
+/*  色
+/*-------------------------------------------*/
+$Black: #000;
+$White: #fff;
+// color
+$Gray:#d9d9db;
+$GrayLight: #f7f7f7;
+$GrayDark: #626365;
+$Blue: #2196f3;
+$BlueDisable: #8bc2ee;
+$BlueLight: #e7f7ff;
+$Red: #e91e63;
+$RedDisable: #e5648f;
+/*-------------------------------------------*/
+/*  文字サイズ
+/*-------------------------------------------*/
+$font-xxs: 0.5em;
+$font-xs: 0.75em;
+$font-sm: 0.875em;
+$font-md: 1em;
+$font-lg: 1.25em;
+$font-xl: 1.5em;
+$font-xxl: 1.75em;
+/*-------------------------------------------*/
+/*  メディアクエリ
+/*-------------------------------------------*/
+$xlarge-min: 1201px;
+$xlarge: 1200px;
+$large-min: 963px;
+$large: 962px;
+$medium-min: 769px;
+$medium: 768px;
+$small-min: 577px;
+$small: 576px;
+
+@mixin xlarge-min {
+    @media (min-width: ($xlarge-min)) {
+        @content;
+    }
+}
+@mixin xlarge {
+    @media (max-width: ($xlarge)) {
+        @content;
+    }
+}
+@mixin large-min {
+    @media (min-width: ($large-min)) {
+        @content;
+    }
+}
+@mixin large {
+    @media (max-width: ($large)) {
+        @content;
+    }
+}
+@mixin medium-min {
+    @media (min-width: ($medium-min)) {
+        @content;
+    }
+}
+@mixin medium {
+    @media (max-width: ($medium)) {
+        @content;
+    }
+}
+@mixin small-min {
+    @media (min-width: ($small-min)) {
+        @content;
+    }
+}
+@mixin small {
+    @media (max-width: ($small)) {
+    @content;
+    }
+}
