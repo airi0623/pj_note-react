@@ -16,7 +16,9 @@ function App() {
 
   // 初期だけ実施：noteが選択されていなければ、最初のノートを選択させる
   useEffect(() => {
+    if(notes[0]) {
       setActiveNoteId(notes[0].id)
+    }
   }, []);
 
   // 追加
